@@ -1,0 +1,29 @@
+*{
+ background-color: antiquewhite;
+}
+h1 {
+    color: rgb(81, 61, 61);
+    text-align: center;
+}
+
+.para {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    text-align: center;
+}
+
+.box{
+    border: 2px solid rgb(151, 145, 145);
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(205, 224, 229, 0.478);
+}
+
+.vivi.box{
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
