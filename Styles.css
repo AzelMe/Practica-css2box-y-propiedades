@@ -27,3 +27,19 @@ body{
     color: rgb(136, 92, 92);
     text-align: center;
 }
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+}
+.Members{
+    padding: 10px;
+    margin: 20px;
+    width: 250px;
+    height: 500px;
+}
