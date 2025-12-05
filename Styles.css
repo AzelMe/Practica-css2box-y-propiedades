@@ -19,6 +19,27 @@
     width: 50%;
 }
 
+header{
+    padding: 10px;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navegacion{
+    background-color: rgb(235, 219, 210);
+    text-align: left;
+}
+
+nav a{
+    background-color: rgb(235, 219, 210);
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(136, 92, 92);
+    font-size: 20px;
+    
+}
+
 body{
     font-family: cursive;
     padding: 50px;
