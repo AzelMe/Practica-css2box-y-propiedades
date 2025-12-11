@@ -56,6 +56,7 @@ body{
     flex-wrap: wrap;
     flex-grow: 0;
     flex-shrink: 0;
+    gap: 500px;
 
 }
 .Members{
@@ -63,4 +64,10 @@ body{
     margin: 20px;
     width: 250px;
     height: 500px;
+}
+
+.Steiner{
+    align-self: center;
+    flex-grow: 3;
+    height: 600px;
 }
