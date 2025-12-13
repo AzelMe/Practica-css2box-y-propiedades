@@ -1,81 +1,122 @@
-*{
- background-color: antiquewhite;
- font-family:  cursive;
+* {
+  background-color: antiquewhite;
+  font-family: cursive;
+}
+
+.box {
+  border: 2px solid rgb(151, 145, 145);
+  padding: 5px;
+  margin: 20px;
+  background-color: rgba(229, 223, 205, 0.478);
+}
+
+.vivi.box {
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 
-.box{
-    border: 2px solid rgb(151, 145, 145);
-    padding: 5px;
-    margin: 20px;
-    background-color: rgba(229, 223, 205, 0.478);
+/* Estilos para el header y la navegacion */
+
+header {
+  background-color: rgb(235, 219, 210);
+  padding: 10px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+.navegacion {
+  background-color: rgb(235, 219, 210);
+  text-align: left;
+  padding: 10px;
 }
 
-.vivi.box{
-    box-sizing: border-box;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.navegacion a {
+  background-color: rgb(235, 219, 210);
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(136, 92, 92);
+  font-size: 20px;
 }
 
-header{
-    padding: 10px;
-    margin-bottom: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-.navegacion{
-    background-color: rgb(235, 219, 210);
-    text-align: left;
-    padding: 10px;
+.navegacion a:hover {
+  background-color: rgb(201, 179, 169);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.navegacion a{
-    background-color: rgb(235, 219, 210);
-    margin: 10px;
-    text-decoration: none;
-    color: rgb(136, 92, 92);
-    font-size: 20px;
-    
+/* Estilos para el footer de cookies */
+
+.cookie-footer {
+  background-color: rgb(235, 219, 210);
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(136, 92, 92);
+  text-decoration: none;
 }
 
-.navegacion a:hover{
-    background-color: rgb(201, 179, 169);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
+.cookie-footer p {
+  background-color: rgb(235, 219, 210);
 }
 
-body{
-    font-family: cursive;
-    padding: 50px;
-    margin: 10px;
-    padding: 5px;
-    color: rgb(136, 92, 92);
-    text-align: center;
+.cookie-footer a {
+  background-color: rgb(235, 219, 210);
+  text-decoration: none;
 }
 
-.flex-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: wrap;
-    flex-grow: 0;
-    flex-shrink: 0;
-    gap: 500px;
+.cookie-footer button {
+  background-color: rgb(201, 179, 169);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
 
 }
-.Members{
-    padding: 10px;
-    margin: 20px;
-    width: 250px;
-    height: 500px;
+.cookie-footer button:hover {
+  background-color: rgb(136, 92, 92);
 }
 
-.Steiner{
-    align-self: center;
-    flex-grow: 3;
-    height: 600px;
+/* Estilos para el cuerpo de la pagina */
+
+body {
+  font-family: cursive;
+  padding: 50px;
+  margin: 10px;
+  padding: 5px;
+  color: rgb(136, 92, 92);
+  text-align: center;
+}
+
+/* Estilos para el contenedor flex y los elementos dentro de el */
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  flex-shrink: 0;
+  gap: 500px;
+}
+.Members {
+  padding: 10px;
+  margin: 20px;
+  width: 250px;
+  height: 500px;
+}
+
+.Steiner {
+  align-self: center;
+  flex-grow: 3;
+  height: 600px;
 }
