@@ -1,5 +1,4 @@
 * {
-  background-color: antiquewhite;
   font-family: cursive;
 }
 
@@ -18,43 +17,67 @@
   width: 50%;
 }
 
-
 /* Estilos para el header y la navegacion */
 
 header {
   background-color: rgb(235, 219, 210);
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 100;
+  margin: 0;
   position: sticky;
   top: 0;
   z-index: 1000;
   overflow: hidden;
+
+  width: 100%;
+  left: 0;
+  right: 0;
 }
 .navegacion {
-  background-color: rgb(235, 219, 210);
   text-align: left;
   padding: 10px;
+  justify-content: space-between;
 }
 
 .navegacion a {
-  background-color: rgb(235, 219, 210);
   margin: 10px;
   text-decoration: none;
   color: rgb(136, 92, 92);
   font-size: 20px;
+  gap: 20px;
 }
 
 .navegacion a:hover {
-  background-color: rgb(201, 179, 169);
   color: white;
   padding: 5px;
   border-radius: 5px;
 }
 
+.navegacion .KHLogo {
+  height: 50px;
+  float: left;
+  margin-right: 20px;
+  display: inline;
+}
+
+.Extras {
+  background-color: rgb(136, 92, 92);
+  float: right;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
+}
+.Extras:hover {
+  background-color: rgb(201, 179, 169);
+}
+
 /* Estilos para el footer de cookies */
 
 .cookie-footer {
-  background-color: rgb(235, 219, 210);
   padding: 10px;
   text-align: center;
   font-size: 14px;
@@ -62,12 +85,7 @@ header {
   text-decoration: none;
 }
 
-.cookie-footer p {
-  background-color: rgb(235, 219, 210);
-}
-
 .cookie-footer a {
-  background-color: rgb(235, 219, 210);
   text-decoration: none;
 }
 
@@ -80,7 +98,6 @@ header {
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-
 }
 .cookie-footer button:hover {
   background-color: rgb(136, 92, 92);
@@ -89,12 +106,12 @@ header {
 /* Estilos para el cuerpo de la pagina */
 
 body {
+  background-color: antiquewhite;
   font-family: cursive;
-  padding: 50px;
-  margin: 10px;
-  padding: 5px;
   color: rgb(136, 92, 92);
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 /* Estilos para el contenedor flex y los elementos dentro de el */
@@ -109,8 +126,6 @@ body {
   gap: 500px;
 }
 .Members {
-  padding: 10px;
-  margin: 20px;
   width: 250px;
   height: 500px;
 }
