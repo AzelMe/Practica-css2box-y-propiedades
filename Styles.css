@@ -308,6 +308,12 @@ body {
     font-size: 15px;
   }
 
+  .EquipoPrincipal {
+    font-size: 20px;
+  }
+  .EquipoSecundario {
+    font-size: 20px;
+  }
   
 }
 
@@ -338,5 +344,11 @@ body {
 
   .navegacion a{
     font-size: 20px;
+  }
+  .EquipoPrincipal {
+    font-size: 40px;
+  }
+  .EquipoSecundario {
+    font-size: 30px;
   }
 }
