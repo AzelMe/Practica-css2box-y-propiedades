@@ -317,6 +317,127 @@ body {
   
 }
 
+
+.ff7-menu {
+  display: grid;
+  grid-template-areas:
+    "characters menu"
+    "footer footer";
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  font-family: 'Verdana', sans-serif;
+}
+
+.character-panel {
+  grid-area: characters;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.character {
+  display: flex;
+  background: #333;
+  padding: 10px;
+  border-radius: 6px;
+  align-items: center;
+}
+
+.character img {
+  width: 20%;
+  margin-right: 10px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;   /* apila los datos en columna */
+  align-items: flex-start;  /* alinea todo a la izquierda */
+  text-align: left;         /* asegura que el texto se quede pegado a la izquierda */
+}
+
+.stats h3, 
+.stats p, 
+.stat-block span {
+  margin: 2px 0;
+  text-align: left;         /* fuerza alineación izquierda en cada línea */
+}
+
+
+
+
+
+
+.stat-block {
+  display: flex;
+  gap: 10px;
+  margin: 6px 0;
+}
+
+.stat-block span {
+  min-width: 90px;
+  font-size: 100%;
+  color: #fff;
+}
+
+.bar-container {
+  flex: 1;
+  width: 180px;
+  height: 14px;
+  background: #222;
+  border: 1px solid #555;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 2px;
+}
+
+.bar-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Colores específicos */
+.hp .bar-fill {
+  background: linear-gradient(to right, #ff3c3c, #cc0000);
+}
+
+.mp .bar-fill {
+  background: linear-gradient(to right, #3c9cff, #0055cc);
+}
+
+.limit .bar-fill {
+  background: linear-gradient(to right, #ffcc00, #ffaa00);
+}
+
+.menu-options {
+  grid-area: menu;
+  display: grid;
+  gap: 10px;
+}
+
+.menu-options button {
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footer-info {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  background: #222;
+  padding: 10px;
+  border-top: 2px solid #555;
+}
+
+
+
 /* Breakpoint para pantallas grandes */
 
 @media (min-width: 1025px) {
