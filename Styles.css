@@ -1,5 +1,5 @@
 * {
-  font-family: cursive;
+  font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
 .box {
@@ -173,53 +173,60 @@ body {
 
 
 .Teams {
+  font-family: Arial !important;
   display: grid;
   grid-template-areas: 
     "vertical horizontal";
   grid-template-columns: 1fr 1fr; /* dos columnas principales */
   gap: 20px;
+  background-color: #ffddd6;
 }
 
 /* Área izquierda: vertical */
 .EquipoPrincipal {
+  font-size: 50px;
   grid-area: vertical;
   display: grid;
   grid-template-rows: repeat(3, auto); /* apila 3 elementos */
   gap: 10px;
-  background: #d4edda;
 }
 
 /* Área derecha: horizontal */
 .EquipoSecundario {
+  font-size: 30px;
   grid-area: horizontal;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* dos columnas */
   gap: 10px;
-  background: #cce5ff;
 }
 
 .v1, .v2, .v3, .v4 {
   display: flex;
-  padding: 10px;
+  padding: 5px;
   background: #f8f9fa;
   border: 1px solid #ccc;
+  border-radius: 10px;
+  align-items: center;
 }
 
 .h1, .h2 {
   display: flex;
-  padding: 10px;
+  padding: 5px;
   background: #f8f9fa;
   border: 1px solid #ccc;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .v1 img, .v2 img, .v3 img , .v4 img{ 
-  width: 30%; 
+  width: 20%; 
   height: auto; 
   object-fit: contain; 
   border-radius: 4px; }
 
 .h1 img, .h2 img { 
-  width: 50%; 
+  width: 80%; 
   height: auto; 
   object-fit: contain; 
   border-radius: 4px; }
