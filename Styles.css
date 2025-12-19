@@ -144,13 +144,15 @@ body {
 
   grid-template-columns: repeat(4, 2fr);
 
-  gap: 15px;
+  gap: 20px;
+
+  padding: 20px;
 
 }
 
 .gallery-item {
 
-  background-color: #f0f0f0;
+  background-color: #ffffffbb;
 
   padding: 20px;
 
@@ -159,6 +161,68 @@ body {
   border-radius: 8px;
 
 }
+.gallery-item img {
+
+  max-width: 500%;
+
+  height: 250px;
+
+  border-radius: 8px;
+
+}
+
+
+.Teams {
+  display: grid;
+  grid-template-areas: 
+    "vertical horizontal";
+  grid-template-columns: 1fr 1fr; /* dos columnas principales */
+  gap: 20px;
+}
+
+/* Área izquierda: vertical */
+.EquipoPrincipal {
+  grid-area: vertical;
+  display: grid;
+  grid-template-rows: repeat(3, auto); /* apila 3 elementos */
+  gap: 10px;
+  background: #d4edda;
+}
+
+/* Área derecha: horizontal */
+.EquipoSecundario {
+  grid-area: horizontal;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* dos columnas */
+  gap: 10px;
+  background: #cce5ff;
+}
+
+.v1, .v2, .v3, .v4 {
+  display: flex;
+  padding: 10px;
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+}
+
+.h1, .h2 {
+  display: flex;
+  padding: 10px;
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+}
+
+.v1 img, .v2 img, .v3 img , .v4 img{ 
+  width: 30%; 
+  height: auto; 
+  object-fit: contain; 
+  border-radius: 4px; }
+
+.h1 img, .h2 img { 
+  width: 50%; 
+  height: auto; 
+  object-fit: contain; 
+  border-radius: 4px; }
 
 /*-----------------------------------------------------------------------*/
 
