@@ -136,6 +136,32 @@ body {
   height: 600px;
 }
 
+/* Estilos para la galeria de imagenes */
+
+.gallery-container {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 2fr);
+
+  gap: 15px;
+
+}
+
+.gallery-item {
+
+  background-color: #f0f0f0;
+
+  padding: 20px;
+
+  text-align: center;
+
+  border-radius: 8px;
+
+}
+
+/*-----------------------------------------------------------------------*/
+
 /* Breakpoints*/
 
 @media (max-width: 600px) {
